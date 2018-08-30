@@ -24,7 +24,8 @@ AWS.config.update({region: 'us-west-2'});
     },
     useMongoClient: true,
 };
-  var connectionString = process.env.connectionString;
+  var connectionString = process.env.connectionString; 
+  //
   mongoose.connect(connectionString, opts);
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
