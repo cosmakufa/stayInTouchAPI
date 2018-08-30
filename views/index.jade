@@ -1,0 +1,48 @@
+extend layout
+block content
+      div.top
+        form.form-horizontal(method="post", id="loginForm")
+          label Username
+          input.span3(id="username", type="text", name="User", placeholder="Enter your username")
+          label Password
+          input.span3(id="password", type="password", name="Password")
+          input.btn(type="submit", value="Log In")
+      div.container
+        div.content
+          table.table.table-striped
+            thead
+              tr
+                th JOB ID
+                th JOB TITLE
+                th JOB Description
+                th Location
+                th 
+                th 
+
+            tbody
+              tr
+                td Blah
+                td Test
+              tr
+                td Hello
+                td World
+              tr
+                form.form-horizontal(method="post", id="loginForm")
+                  td
+                    label Username
+                    input.span3(id="username", type="text", name="User", placeholder="Enter your username")
+                  td
+                    label Password
+                    input.span3(id="password", type="password", name="Password")
+                    input.btn(type="submit", value="Log In")
+
+      div.footer
+block sidebar
+  .widget
+    h1 Widget
+    p
+      | Sed auctor neque eu tellus rhoncus ut
+      | eleifend nibh porttitor. Ut in nulla enim.
+    p
+      | Vivamus hendrerit arcu sed erat molestie
+      | vehicula.
